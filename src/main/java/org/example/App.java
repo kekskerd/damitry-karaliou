@@ -78,5 +78,11 @@ public class App {
             System.out.println();
         }
 
+        System.out.println("----------task 9----------");
+        int task9arr[] = Task9.lenInitialvalueArr(7, 12);
+        for (int i = 0; i < task9arr.length; i++) {
+            System.out.print(task9arr[i] + " ");
+        }
+
     }
 }
