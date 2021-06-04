@@ -20,5 +20,20 @@ public class App {
         System.out.println("----------task 5----------");
         boolean result5 = Task5.leapYear(1500);
         System.out.println(result5);
+
+        System.out.println("----------task 6----------");
+        int[] arr = {1,0,0,1,1,1,0,0,0};
+        for (int i = 0; i < arr.length; i++){
+            if(arr[i] == 1){
+                arr[i] = 0;
+            }
+            else{
+                arr[i] = 1;
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+        }
     }
 }
