@@ -35,6 +35,7 @@ public class App {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
         }
+        System.out.println();
 
         System.out.println("----------task 7----------");
         int task7Arr[] = new int[100];
@@ -42,7 +43,40 @@ public class App {
             task7Arr[i] = i + 1;
         }
         for (int i = 0; i < task7Arr.length; i++) {
-            System.out.print(task7Arr[i] + ", ");
+            System.out.print(task7Arr[i] + " ");
         }
+        System.out.println();
+
+        System.out.println("----------task 8----------");
+        int task8Arr[] = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+        for (int i = 0; i < task8Arr.length; i++){
+            if (task8Arr[i] < 6){
+                task8Arr[i] = task8Arr[i] * 2;
+            }
+        }
+        for (int i = 0; i < task8Arr.length; i++) {
+            System.out.print(task8Arr[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("----------task 8.1----------");
+        int task81Arr[][] = {{0,0,0,0},
+                             {0,0,0,0},
+                             {0,0,0,0},
+                             {0,0,0,0}};
+        for (int i = 0; i < task81Arr.length; i++){
+            for (int j = 0; j < task8Arr.length; j++){
+                if(i == j){
+                    task81Arr[i][j] = 1;
+                }
+            }
+        }
+        for (int i = 0; i < task81Arr.length; i++){
+            for (int j = 0; j < task81Arr[i].length; j++){
+                System.out.print(task81Arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
