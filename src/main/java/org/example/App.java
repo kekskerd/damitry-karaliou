@@ -83,6 +83,21 @@ public class App {
         for (int i = 0; i < task9arr.length; i++) {
             System.out.print(task9arr[i] + " ");
         }
+        System.out.println();
+
+        System.out.println("----------task 9.1----------");
+        int task91Arr[] = { 5, 7, -6, 99, 34, -4, 0, 105, 3, 2, 1 };
+        int min = 0;
+        int max = 0;
+        for (int i = 0; i < task91Arr.length; i++){
+            if (min > task91Arr[i]){
+                min = task91Arr[i];
+            }
+            if (max < task91Arr[i]){
+                max = task91Arr[i];
+            }
+        }
+        System.out.println("Min: " + min + " " + "Max: " + max);
 
     }
 }
