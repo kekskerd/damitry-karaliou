@@ -17,5 +17,8 @@ public class App {
         System.out.println("----------task 4----------");
         Task4.writeStringNTimes("test string", 5);
 
+        System.out.println("----------task 5----------");
+        boolean result5 = Task5.leapYear(1500);
+        System.out.println(result5);
     }
 }
