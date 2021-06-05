@@ -104,6 +104,13 @@ public class App {
        boolean result10 = Task10.halfArr(task10Arr);
         System.out.println(result10);
 
+        System.out.println("----------task 11----------");
+        int testArr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int task11Arr[] = Task11.shiftArr(testArr, 3);
+        for (int i = 0; i < task11Arr.length; i++) {
+            System.out.print(task11Arr[i] + " ");
+        }
+
 
     }
 }
