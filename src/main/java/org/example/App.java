@@ -99,5 +99,11 @@ public class App {
         }
         System.out.println("Min: " + min + " " + "Max: " + max);
 
+        System.out.println("----------task 10----------");
+        int task10Arr[] = { 2, 2, 2, 1, 2, 2, 10, 1 };
+       boolean result10 = Task10.halfArr(task10Arr);
+        System.out.println(result10);
+
+
     }
 }
