@@ -1,13 +1,18 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+    public static void main(String[] args) {
+        Employee[] empArray = new Employee[5];
+        empArray[0] = new Employee("Зубенко Михаил Петрович", "PM", "zubmih@gmail.com", "+375299547826", 100000, 41);
+        empArray[1] = new Employee("Жмых Семён Олегович", "JS developer", "djmih_semen@gmail.com", "+375299598726", 150000, 55);
+        empArray[2] = new Employee("Жижкина Галина Алексеевна", "QA", "djija@gmail.com", "+375298889974", 7000000, 45);
+        empArray[3] = new Employee("Залётный Олег Иванович", "Завхоз", "zaloleg@gmail.com", "+375333648246", 1312, 39);
+        empArray[4] = new Employee("Снегурдинский Антон Артёмович", "CEO", "snegurda@gmail.com", "+375333648255", 777777777, 25);
+
+        for (int i = 0; i < empArray.length; i++) {
+            if (empArray[i].getAge() > 40) {
+                empArray[i].getInfo();
+            }
+        }
     }
 }
