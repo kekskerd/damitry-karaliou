@@ -13,11 +13,26 @@ public class App {
                 "aaa", "fff", "ccc", "ggg", "aaa",
                 "aaa", "fff", "qqq", "ggg", "hhh"));
         System.out.println("----TASK 1-----");
-        HashMap<String, Integer> map = countWords(words);
-        for (HashMap.Entry<String, Integer> i : map.entrySet()){
-            System.out.println("Колличество слов " + i.getKey() + " = " + i.getValue());
+        HashMap<String, Integer> countMap = countWords(words);
+        for (HashMap.Entry<String, Integer> map : countMap.entrySet()) {
+            System.out.println("Колличество слов " + map.getKey() + " = " + map.getValue());
         }
         System.out.println("----TASK 2-----");
+
+        PhoneDirectory phoneDir = new PhoneDirectory();
+        phoneDir.add(9379992, "Иванов");
+        phoneDir.add(5861478, "Петров");
+        phoneDir.add(9852146, "Зубенко");
+        phoneDir.add(5824684, "Антонов");
+        phoneDir.add(8800555, "Зубенко");
+        phoneDir.add(6068548, "Меладзе");
+        phoneDir.add(6549873, "Петров");
+        phoneDir.add(4859263, "Петров");
+
+        phoneDir.get("Зубенко");
+        phoneDir.get("Петров");
+        phoneDir.get("Меладзе");
+        phoneDir.get("Жмышенко");
 
     }
 
